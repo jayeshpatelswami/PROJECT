@@ -1,0 +1,29 @@
+/* .crousal_Wraper{
+    align-self: center;
+    justify-self: center;
+    border: 3px solid red;
+    background-color: blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60vw;
+    height: 50vh;
+}
+.carousel-indicators .slide{
+    width: 100%;
+    height: 100%;
+}
+.d-block {
+ /* height: 50%;
+   width: 100%; */
+    /* aspect-ratio: 16/9; */
+ 
+   
+   .img_block , .mailncrousal{
+        width: 97vw;
+    height: 80vh;
+    }
+    .img_block{
+        border-radius: 15px;
+    }
