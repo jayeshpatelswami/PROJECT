@@ -9,7 +9,7 @@ const Crousal = () => {
     <div className="crousal_Wraper">
       <div
         id="carouselExampleIndicators"
-        className="carousel slide mailncrousal"
+        className="carousel carousel-dark slide mailncrousal"
         data-bs-ride="true"
       >
         <div className="carousel-indicators">
@@ -35,10 +35,10 @@ const Crousal = () => {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active">
+          <div className="carousel-item active" data-bs-interval="1000">
             <img src={img1} className="d-block img_block" alt="..." />
           </div>
-          <div className="carousel-item">
+          <div className="carousel-item" data-bs-interval="3000">
             <img src={img2} className="d-block img_block" alt="..." />
           </div>
           <div className="carousel-item">

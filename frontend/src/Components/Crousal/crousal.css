@@ -21,8 +21,8 @@
  
    
    .img_block , .mailncrousal{
-        width: 97vw;
-    height: 80vh;
+        width: "90%";
+            height: 70vh;
     }
     .img_block{
         border-radius: 15px;
