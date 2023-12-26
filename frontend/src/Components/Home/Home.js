@@ -3,9 +3,10 @@ import Crousal from "../Crousal/Crousal";
 import "./home.css";
 import Schema_Display from "../Schema_Display/Schema_Display";
 import ParticularScema_Display from "../ParticularSchema/ParticularScema_Display";
+import Footer from "../Footer";
 const Home = () => {
   return (
-    <div className="container">
+    <div className="containe">
       <div className="containera">
         <Crousal />
       </div>
@@ -14,6 +15,9 @@ const Home = () => {
       </div>
       <div className="schema_container">
         <Schema_Display />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

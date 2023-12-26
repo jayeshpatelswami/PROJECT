@@ -98,25 +98,29 @@ const DummyData = [
 const Schema_Display = () => {
   return (
     <>
-      <h3 className="txt">Other Schema</h3>
-      <div className="Schema_Wraper">
-        {DummyData.map((item, index) => (
-          <div key={index}>
-            <div className="Schema">
-              {/* <h2>{item.name ? item.name.slice(0, 35) + "..." : ""}</h2>
+      <div className="SDcontainer">
+        <h3 className="txt">Other Schema</h3>
+        <div className="Schema_Wraper">
+          {DummyData.map((item, index) => (
+            <div key={index}>
+              <div className="Schema">
+                {/* <h2>{item.name ? item.name.slice(0, 35) + "..." : ""}</h2>
           <h2>
             {item.description ? item.description.slice(0, 55) + "..." : ""}
           </h2> */}
-              <Schema
-                Title={item.name ? item.name.slice(0, 35) + "..." : ""}
-                imgUrl={item.imgurl}
-                text={
-                  item.description ? item.description.slice(0, 55) + "..." : ""
-                }
-              />
+                <Schema
+                  Title={item.name ? item.name.slice(0, 35) + "..." : ""}
+                  imgUrl={item.imgurl}
+                  text={
+                    item.description
+                      ? item.description.slice(0, 55) + "..."
+                      : ""
+                  }
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

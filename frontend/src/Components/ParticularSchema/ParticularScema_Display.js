@@ -66,25 +66,29 @@ const DummyData = [
 const ParticularScema_Display = () => {
   return (
     <>
-      <h3 className="txt">Schema For Farmer</h3>
-      <div className=" PSDContainer">
-        {DummyData.map((item, index) => (
-          <div key={index}>
-            <div className="Schema">
-              {/* <h2>{item.name ? item.name.slice(0, 35) + "..." : ""}</h2>
+      <div className="PSDWholeContainer">
+        <h3 className="txt">Schema For You : </h3>
+        <div className=" PSDContainer">
+          {DummyData.map((item, index) => (
+            <div key={index}>
+              <div className="Schema">
+                {/* <h2>{item.name ? item.name.slice(0, 35) + "..." : ""}</h2>
         <h2>
           {item.description ? item.description.slice(0, 55) + "..." : ""}
         </h2> */}
-              <Schema
-                Title={item.name ? item.name.slice(0, 35) + "..." : ""}
-                imgUrl={item.imgurl}
-                text={
-                  item.description ? item.description.slice(0, 55) + "..." : ""
-                }
-              />
+                <Schema
+                  Title={item.name ? item.name.slice(0, 35) + "..." : ""}
+                  imgUrl={item.imgurl}
+                  text={
+                    item.description
+                      ? item.description.slice(0, 55) + "..."
+                      : ""
+                  }
+                />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

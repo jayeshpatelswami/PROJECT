@@ -1,8 +1,28 @@
+#root {
+    background-color: #1B4242;
+
+}
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     flex-direction: column;
-    
+}
+
+.containera {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+    /* width: 50%; */
+    /* align-self: center; */
+
+}
+
+.schema_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
