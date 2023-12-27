@@ -1,6 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 const Navbar = () => {
+  const handallogout = () => {};
   return (
     <div>
       <nav
@@ -69,10 +71,32 @@ const Navbar = () => {
                 <a className="nav-link disabled">Disabled</a>
               </li>
             </ul>
-            <button className="btn btn-primary d-flex me-2 disabled">
-              {" "}
-              User@user.com
-            </button>
+            <div className="dropstart">
+              <button
+                className="btn btn-primary d-flex me-2 "
+                aria-expanded="false"
+                data-bs-toggle="dropdown"
+              >
+                User@user.com
+              </button>
+              <ul className="dropdown-menu userCredential">
+                <li>
+                  <button className="dropdown-item" type="button">
+                    User@user.com
+                  </button>
+                </li>
+                <li>
+                  <button className="dropdown-item" type="button">
+                    Setting
+                  </button>
+                </li>
+                <li>
+                  <Link to="/login" className="dropdown-item">
+                    Log Out
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>

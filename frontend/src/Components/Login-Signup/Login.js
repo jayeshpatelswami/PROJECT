@@ -21,7 +21,7 @@ const Login = () => {
     //  if (json.success) {
     //     localStorage.setItem('token',json.authtoken);
     //     localStorage.setItem('email',info.email);
-    //     history.push("/home");
+    history.push("/");
     //  }else{
     //     alert("invalid username or password")
     //  }
@@ -32,8 +32,11 @@ const Login = () => {
   };
   return (
     <>
-      <div className="container border border-3    my-5">
-        <form onSubmit={handalsubmit}>
+      <div className="container" style={{ color: "white" }}>
+        <form
+          onSubmit={handalsubmit}
+          className="border border-3 m-5 p-3 rounded"
+        >
           <fieldset>
             <legend>Login Form </legend>
 
@@ -66,10 +69,11 @@ const Login = () => {
                 name="password"
               />
             </div>
-
-            <button type="submit" className="btn btn-primary my-2">
-              Login
-            </button>
+            <div className="d-flex justify-content-center">
+              <button type="submit" className="btn btn-primary my-2">
+                Login
+              </button>
+            </div>
           </fieldset>
         </form>
 
