@@ -85,7 +85,7 @@ const Navbar = () => {
                   </button>
                 </li>
                 <li>
-                  <Link to="setting" className="dropdown-item">
+                  <Link to="/setting" className="dropdown-item">
                     Setting
                   </Link>
                 </li>

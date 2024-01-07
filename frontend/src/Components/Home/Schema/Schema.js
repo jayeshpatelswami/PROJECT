@@ -15,6 +15,7 @@ const Schema = ({ text, imgUrl, Title, Url }) => {
           <p className="card-text">{text}</p>
           <a
             href={Url}
+            rel="noreferrer"
             target="_blank"
             className="btn "
             style={{ backgroundColor: "#1B4242", color: "white" }}
