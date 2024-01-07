@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Schema from "../Home/Schema/Schema";
 import "./schema_display.css";
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../../Firebase";
 
 const DummyData = [
   {
@@ -96,12 +98,33 @@ const DummyData = [
 ];
 
 const Schema_Display = () => {
+  const [data, setData] = useState([
+    // {
+    //   name: "smart-cities-mission-portal-ministry-urban-development",
+    //   description:
+    //     "Smart Cities Mission Portal by Ministry of Urban Development",
+    //   imgurl:
+    //     "https://dcblog.b-cdn.net/wp-content/uploads/2021/02/Full-form-of-URL-1-1024x824.jpg",
+    //   url: "https://www.india.gov.in/smart-cities-mission-portal-ministry-urban-development,Smart",
+    // },
+  ]);
+  useEffect(() => {
+    getData();
+  }, []);
+  const getData = async () => {
+    const docRef = collection(db, "data");
+    const snapshot = await getDocs(docRef);
+    setData(snapshot.docs.map((doc) => doc.data()));
+    // console.log(snapshot.docs.map((doc) => doc.data()));
+  };
+
   return (
     <>
-      <div className="SDcontainer">
+      <div className="SDcontainer pb-5">
         <h3 className="txt">Other Schema</h3>
         <div className="Schema_Wraper">
-          {DummyData.map((item, index) => (
+          {data.map((item, index) => (
+            // {DummyData.map((item, index) => (
             <div key={index}>
               <div className="Schema">
                 {/* <h2>{item.name ? item.name.slice(0, 35) + "..." : ""}</h2>
@@ -116,6 +139,7 @@ const Schema_Display = () => {
                       ? item.description.slice(0, 55) + "..."
                       : ""
                   }
+                  Url={item.url}
                 />
               </div>
             </div>

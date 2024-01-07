@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import "./Navbar.css";
+import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom";
+import "./Navbar.css";
 const Navbar = () => {
-  const handallogout = () => {};
   return (
     <div>
       <nav
@@ -10,9 +9,9 @@ const Navbar = () => {
         style={{ backgroundColor: "#092635" }}
       >
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            LOGO
-          </a>
+          <Link className="navbar-brand" to="/">
+            MY Schema
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,48 +26,48 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Link
-                </a>
+                <Link className="nav-link" to="/about">
+                  About
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="/"
+                  to="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Dropdown
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="/">
                       Action
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="/">
                       Another action
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="/">
                       Something else here
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <a className="nav-link disabled">Disabled</a>
+                <Link className="nav-link disabled">Disabled</Link>
               </li>
             </ul>
             <div className="dropstart">
@@ -86,9 +85,9 @@ const Navbar = () => {
                   </button>
                 </li>
                 <li>
-                  <button className="dropdown-item" type="button">
+                  <Link to="setting" className="dropdown-item">
                     Setting
-                  </button>
+                  </Link>
                 </li>
                 <li>
                   <Link to="/login" className="dropdown-item">

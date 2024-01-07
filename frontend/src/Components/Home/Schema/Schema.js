@@ -1,17 +1,22 @@
 import React from "react";
 import "./schema.css";
 
-const Schema = ({ text, imgUrl, Title }) => {
+
+const Schema = ({ text, imgUrl, Title, Url }) => {
   return (
     <div>
-      <div class="card" style={{ width: "18rem", backgroundColor: "#5C8374" }}>
-        <img src={imgUrl} class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">{Title}</h5>
-          <p class="card-text">{text}</p>
+      <div
+        className="card"
+        style={{ width: "18rem", backgroundColor: "#5C8374" }}
+      >
+        <img src={imgUrl} className="card-img-top" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title">{Title}</h5>
+          <p className="card-text">{text}</p>
           <a
-            href="/"
-            class="btn "
+            href={Url}
+            target="_blank"
+            className="btn "
             style={{ backgroundColor: "#1B4242", color: "white" }}
           >
             Go somewhere
