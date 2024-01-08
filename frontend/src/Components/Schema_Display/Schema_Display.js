@@ -120,7 +120,7 @@ const Schema_Display = () => {
 
   return (
     <>
-      <div className="SDcontainer pb-5">
+      <div className="container SDcontainer pb-5">
         <h3 className="txt">Other Schema</h3>
         <div className="Schema_Wraper">
           {data.map((item, index) => (

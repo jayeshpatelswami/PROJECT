@@ -4,6 +4,7 @@ import "./home.css";
 import Schema_Display from "../Schema_Display/Schema_Display";
 import ParticularScema_Display from "../ParticularSchema/ParticularScema_Display";
 import Footer from "../Footer";
+import Faq from "./Faq/Faq";
 const Home = () => {
   return (
     <div className="containe">
@@ -13,8 +14,11 @@ const Home = () => {
       <div className="schema_container">
         <ParticularScema_Display />
       </div>
-      <div className="schema_container">
+      {/* <div className="schema_container">
         <Schema_Display />
+      </div> */}
+      <div className="schema_container">
+        <Faq />
       </div>
       <div>
         <Footer />

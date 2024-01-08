@@ -24,7 +24,6 @@ const Setting = () => {
         style={{ backgroundColor: "#9EC8B9" }}
       >
         <div>
-          <h3>Setting </h3>
           <div>
             <h2>Settings</h2>
             <form onSubmit={handleSubmit}>
@@ -57,7 +56,7 @@ const Setting = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="container">
         <Link to="/" className="btn btn-primary">
           Home
         </Link>

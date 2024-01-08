@@ -9,6 +9,7 @@ import Setting from "./Components/Setting/Setting";
 import Footer from "./Components/Footer";
 
 import ErrorPage from "./Components/Error page/ErrorPage";
+import Schema_Display from "./Components/Schema_Display/Schema_Display";
 
 function App() {
   return (
@@ -37,6 +38,11 @@ function App() {
         <Route exact path="/setting">
           <Navbar />
           <Setting />
+          <Footer />
+        </Route>
+        <Route exact path="/AllSchems">
+          <Navbar />
+          <Schema_Display />
           <Footer />
         </Route>
         <Route exact path="*">

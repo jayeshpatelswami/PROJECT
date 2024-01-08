@@ -2,7 +2,7 @@ import React from "react";
 import "./schema.css";
 
 
-const Schema = ({ text, imgUrl, Title, Url }) => {
+const Schema = ({ text, imgUrl, Title, Url, btnTxt }) => {
   return (
     <div>
       <div
@@ -20,7 +20,7 @@ const Schema = ({ text, imgUrl, Title, Url }) => {
             className="btn "
             style={{ backgroundColor: "#1B4242", color: "white" }}
           >
-            Go somewhere
+            {btnTxt || "Go to Link"}
           </a>
         </div>
       </div>

@@ -84,6 +84,7 @@ const ParticularScema_Display = () => {
                       ? item.description.slice(0, 55) + "..."
                       : ""
                   }
+                  btnTxt={"Check Eligibility"}
                 />
               </div>
             </div>

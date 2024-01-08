@@ -1,8 +1,8 @@
 import React from "react";
 import "./crousal.css";
-import img1 from "../../Image/download.png";
-import img2 from "../../Image/download1.jpeg";
-import img3 from "../../Image/download2.jpeg";
+import img1 from "../../Image/download.jpg";
+import img2 from "../../Image/download1.jpg";
+import img3 from "../../Image/download2.jpg";
 
 const Crousal = () => {
   return (
@@ -37,12 +37,17 @@ const Crousal = () => {
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="1000">
             <img src={img1} className="d-block img_block" alt="..." />
+            {/* <img src="https://www.myscheme.gov.in/_next/image?url=https%3A%2F%2Fcdn.myscheme.in%2Fimages%2Fslideshow%2Fnew-year.webp&w=1920&q=75" className="d-block img_block" alt="..." /> */}
           </div>
           <div className="carousel-item" data-bs-interval="3000">
             <img src={img2} className="d-block img_block" alt="..." />
+
+            {/* <img src="https://www.myscheme.gov.in/_next/image?url=https%3A%2F%2Fcdn.myscheme.in%2Fimages%2Fslideshow%2F2-full.webp&w=1920&q=75" className="d-block img_block" alt="..." /> */}
           </div>
           <div className="carousel-item">
             <img src={img3} className="d-block img_block" alt="..." />
+
+            {/* <img src="https://www.myscheme.gov.in/_next/image?url=https%3A%2F%2Fcdn.myscheme.in%2Fimages%2Fslideshow%2F1-full.webp&w=1920&q=75" className="d-block img_block" alt="..." /> */}
           </div>
         </div>
         <button

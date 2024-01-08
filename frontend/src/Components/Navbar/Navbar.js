@@ -43,12 +43,12 @@ const Navbar = () => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Schemes
                 </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <Link className="dropdown-item" to="/">
-                      Action
+                    <Link className="dropdown-item" to="/AllSchems">
+                      All Schemes
                     </Link>
                   </li>
                   <li>
